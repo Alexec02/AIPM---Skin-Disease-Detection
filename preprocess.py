@@ -44,7 +44,7 @@ def preprocess_images_from_folder(folder_path, datagen, class_name):
                 # Add to metadata
                 metadata.append({
                     'label': class_name,
-                    'image_data': img_resized_norm
+                    'image_data': img_resized_norm.flatten()
                 })
 
                 # Apply augmentation
@@ -57,7 +57,7 @@ def preprocess_images_from_folder(folder_path, datagen, class_name):
                     # Add augmented image to metadata
                     metadata.append({
                         'label': class_name,
-                        'image_data': augmented_img
+                        'image_data': augmented_img.flatten()
                     })
 
 def process_dataset(dataset_path, datagen):
