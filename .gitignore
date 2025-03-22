@@ -1,1 +1,5 @@
-dataset-final/
+__pycache__/
+*.npz
+*.csv
+*.h5
+
