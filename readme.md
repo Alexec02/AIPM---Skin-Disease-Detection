@@ -1,4 +1,4 @@
-# Skin Disease Detection using CNN
+# Skin Disease Detection using Machine learning
 
 ### Authors
 - Ayesha Munir
