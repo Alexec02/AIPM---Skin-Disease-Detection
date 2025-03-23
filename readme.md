@@ -5,7 +5,7 @@
 - Alejandro Esperón Couceiro
 
 ## Overview
-This project aims to detect skin diseases using a Machine learning models. The dataset consists of images of various skin conditions, and the model is trained to classify these images into different categories.
+This project aims to detect skin diseases using Machine learning models. The dataset consists of images of various skin conditions, and the model is trained to classify these images into different categories.
 
 ## Project Structure
 - `data_preprocessing.py`: Script for preprocessing the dataset and saving the processed data.
