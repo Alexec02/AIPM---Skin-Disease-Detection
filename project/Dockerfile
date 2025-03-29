@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Install system dependencies and Python dependencies
-RUN pip install --no-cache-dir fastapi uvicorn tensorflow pillow
+RUN pip install --no-cache-dir fastapi uvicorn tensorflow pillow python-multipart pyheif
 
 # Copy the current directory contents into the container
 COPY . /app
@@ -14,4 +14,4 @@ COPY . /app
 EXPOSE 8000
 
 # Run the FastAPI app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
