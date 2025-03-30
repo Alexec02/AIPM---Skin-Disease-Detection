@@ -11,9 +11,9 @@ from tensorflow.keras.applications.vgg16 import preprocess_input
 app = FastAPI()
 
 # Load the model - need to change this
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('xception_model.h5')
 disease_classes = [
-    "Acne or Rosacea",
+    "Acne and Rosacea",
     "Actinic Keratosis, Basal Cell Carcinoma, and Malignant Lesions",
     "Atopic Dermatitis",
     "Bullous Diseases",
@@ -57,7 +57,7 @@ def prepare_image(img_bytes):
         img = img.convert('RGB')
 
     # Resize to 128x128 as per the model's requirement
-    img = img.resize((128, 128))  # Resize to model input size (128x128)
+    img = img.resize((71, 71))  # Resize to model input size (128x128)
     
     # Convert image to numpy array and expand the dimensions
     img_array = np.array(img)
