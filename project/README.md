@@ -27,3 +27,4 @@ Follow the steps below to run the project locally.
 
 1. docker build -t counter-app .
 2. docker run -p 8000:8000 counter-app
+3. Open html file and upload images.
